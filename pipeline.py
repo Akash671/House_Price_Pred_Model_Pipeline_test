@@ -39,3 +39,5 @@ model = train_model(X_train, y_train)
 mse = evaluate_model(model, X_test, y_test)
 print(f'Mean Squared Error: {mse}')
 save_model(model)
+
+amff

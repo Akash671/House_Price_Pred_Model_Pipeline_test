@@ -1,5 +1,4 @@
-# pipeline.py
-from sklearn.datasets import load_boston
+from sklearn.datasets import fetch_california_housing
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LinearRegression
@@ -7,9 +6,9 @@ from sklearn.metrics import mean_squared_error
 import joblib
 
 def load_data():
-    boston = load_boston()
-    X = boston.data
-    y = boston.target
+    housing = fetch_california_housing()
+    X = housing.data
+    y = housing.target
     return X, y
 
 def preprocess_data(X, y):
@@ -39,5 +38,3 @@ model = train_model(X_train, y_train)
 mse = evaluate_model(model, X_test, y_test)
 print(f'Mean Squared Error: {mse}')
 save_model(model)
-
-amff

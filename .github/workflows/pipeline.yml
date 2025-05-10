@@ -18,6 +18,7 @@ jobs:
       - name: Run pipeline
         run: |
           python pipeline.py
-      - name: Deploy model
-        run: |
-          joblib.dump(model, 'house_price_model.joblib')
+      #- name: Deploy model
+        #run: |
+        #  joblib.dump(model, 'house_price_model.joblib')
+          

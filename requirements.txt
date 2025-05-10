@@ -1,4 +1,4 @@
+--upgrade numpy
 scikit-learn
 joblib
 gradio
-numpy
